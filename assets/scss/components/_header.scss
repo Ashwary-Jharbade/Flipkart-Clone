@@ -1,0 +1,59 @@
+@use "../base/colors" as co;
+@use "../components/inputField";
+
+/* Header styling start */
+.header{
+    &-wrapper{
+        background-color: co.$sky-blue;
+        position: static;
+        top: 0;
+    }
+
+    &-container{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        height: 55px;
+    }
+
+    &-spacer{
+        min-width: 10px;
+        width: 170px;
+        max-width: 175px;
+    }
+
+    &-content{
+        display: flex;
+        align-self: center;
+    }
+
+    &-logo{
+        cursor: pointer;
+        img{
+            height: 20px;
+            width: 85px;
+        }
+
+        &-text{
+            font-size: 12px;
+            font-style: italic;
+            color: co.$white;
+            font-weight: bold;
+            position: relative;
+            margin-top: -5px;
+
+            &-plus{
+                color: co.$yellow;
+            }
+
+            img{
+                height: 11px;
+                width: 11px;
+            }
+        }
+    }
+}
+
+
+/* Header styling end */
+
