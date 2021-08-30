@@ -1,0 +1,28 @@
+{
+  "name": "flipkart-clone",
+  "version": "1.0.0",
+  "description": "Trying to clone flipkart home page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile-sass": "sass ./assets/scss/main.scss ./assets/css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ashwary-Jharbade/Flipkart-Clone.git"
+  },
+  "keywords": [
+    "flipkart-Clone",
+    "flipkart",
+    "homepage"
+  ],
+  "author": "Ashwary",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ashwary-Jharbade/Flipkart-Clone/issues"
+  },
+  "homepage": "https://github.com/Ashwary-Jharbade/Flipkart-Clone#readme",
+  "dependencies": {
+    "sass": "^1.38.2"
+  }
+}
