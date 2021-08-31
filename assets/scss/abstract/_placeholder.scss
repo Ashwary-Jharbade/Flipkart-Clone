@@ -1,0 +1,24 @@
+%inputPlaceholder {
+    outline: none;
+    border: none;
+}
+
+%flexPlaceholder {
+    display: flex;
+    flex-direction: row;
+}
+
+%buttonPlaceholder {
+    @extend %inputPlaceholder;
+    cursor: pointer;
+}
+
+%anchorPlaceholder {
+    text-decoration: none;
+    outline: none;
+}
+
+%valignPlaceholder{
+    display: flex;
+    align-self: center;
+}

@@ -1,21 +1,11 @@
 @use "../base/colors" as co;
-@use "../components/inputField";
+@use "../components/customInputField";
+@use "../layout/header";
+@use "../abstract/mixins" as mix;
+@use "../components/dropDown";
 
 /* Header styling start */
 .header{
-    &-wrapper{
-        background-color: co.$sky-blue;
-        position: static;
-        top: 0;
-    }
-
-    &-container{
-        display:flex;
-        flex-direction: row;
-        align-items: center;
-        height: 55px;
-    }
-
     &-spacer{
         min-width: 10px;
         width: 170px;
@@ -25,6 +15,8 @@
     &-content{
         display: flex;
         align-self: center;
+        height: 55px;
+        align-items: center;
     }
 
     &-logo{
@@ -35,7 +27,6 @@
         }
 
         &-text{
-            font-size: 12px;
             font-style: italic;
             color: co.$white;
             font-weight: bold;
@@ -52,8 +43,40 @@
             }
         }
     }
+
+    &-item{
+        padding: 10px;
+        margin-left: 40px;
+        a{
+            @extend %anchorPlaceholder;
+            color: co.$white;
+        }
+    }
+
+    &-item-link{
+        padding: 20px;
+        cursor: pointer;
+    }
+
+    &-btn{
+        background-color: co.$white;
+        padding: 5px 40px;
+        color: co.$sky-blue !important;
+    }
+
 }
 
+.new-customer-text{
+    color: co.$black;
+}
 
+.sign-up-text{
+    color: co.$sky-blue;
+    margin-left: auto;
+}
+
+.header-item-link:hover ~ .drop-down{
+    display: block;
+} 
 /* Header styling end */
 

@@ -110,6 +110,26 @@ table {
   font-weight: 500;
   font-size: 14px;
 }
+.font-100-15 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+}
+.font-300-15 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+}
+.font-400-15 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+.font-500-15 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+}
 .font-100-16 {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
@@ -152,6 +172,21 @@ table {
 }
 
 /* font styling end */
+.search-bar-field {
+  outline: none;
+  border: none;
+}
+
+.drop-down-list, .list-item {
+  display: flex;
+  flex-direction: row;
+}
+
+.header-item a {
+  text-decoration: none;
+  outline: none;
+}
+
 /*Header search field styling start */
 .search-bar {
   background-color: #ffffff;
@@ -165,9 +200,9 @@ table {
 }
 .search-bar-field {
   padding: 8px 15px;
-  outline: none;
-  border: none;
   width: 94%;
+  height: 20px;
+  margin: 0;
 }
 .search-bar-field-icon {
   align-self: center;
@@ -178,7 +213,6 @@ table {
 }
 
 /*Header search field styling end */
-/* Header styling start */
 .header-wrapper {
   background-color: #2874f0;
   position: static;
@@ -190,6 +224,69 @@ table {
   align-items: center;
   height: 55px;
 }
+
+.list-item {
+  padding: 10px 0 0 10px;
+}
+.list-icon {
+  padding: 5px 5px 15px 5px;
+  color: #2874f0;
+}
+.list-content {
+  padding: 5px 5px 15px 5px;
+  color: #212121;
+}
+.list-divider {
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid #eeeeee;
+}
+
+.drop-down {
+  position: relative;
+  display: none;
+  top: -20px;
+}
+.drop-down-arrow {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg) translateX(-50%);
+  background-color: #ffffff;
+}
+.drop-down-list {
+  position: absolute;
+  top: 20px;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.11);
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 5px;
+}
+.drop-down-list-container {
+  width: 250px;
+  background-color: #ffffff;
+}
+.drop-down-list-container-one {
+  width: 250px;
+  background-color: #ffffff;
+  z-index: 1;
+  box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.11);
+  display: none;
+}
+.drop-down-list-container-two {
+  z-index: 0;
+  width: 250px;
+  height: 200px;
+  background-color: #ffffff;
+  display: none;
+}
+.drop-down:hover {
+  display: block;
+}
+
+/* Header styling start */
 .header-spacer {
   min-width: 10px;
   width: 170px;
@@ -198,6 +295,8 @@ table {
 .header-content {
   display: flex;
   align-self: center;
+  height: 55px;
+  align-items: center;
 }
 .header-logo {
   cursor: pointer;
@@ -207,7 +306,6 @@ table {
   width: 85px;
 }
 .header-logo-text {
-  font-size: 12px;
   font-style: italic;
   color: #ffffff;
   font-weight: bold;
@@ -220,6 +318,35 @@ table {
 .header-logo-text img {
   height: 11px;
   width: 11px;
+}
+.header-item {
+  padding: 10px;
+  margin-left: 40px;
+}
+.header-item a {
+  color: #ffffff;
+}
+.header-item-link {
+  padding: 20px;
+  cursor: pointer;
+}
+.header-btn {
+  background-color: #ffffff;
+  padding: 5px 40px;
+  color: #2874f0 !important;
+}
+
+.new-customer-text {
+  color: #212121;
+}
+
+.sign-up-text {
+  color: #2874f0;
+  margin-left: auto;
+}
+
+.header-item-link:hover ~ .drop-down {
+  display: block;
 }
 
 /* Header styling end */

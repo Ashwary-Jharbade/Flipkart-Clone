@@ -1,0 +1,53 @@
+@use "../base/colors" as co;
+@use "../abstract/placeholder" as *;
+@use "../components/listItem";
+
+.drop-down{
+    position: relative;
+    display: none;
+    top: -20px;
+    &-arrow{
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        width: 20px;
+        height: 20px;
+        transform: rotate(45deg) translateX(-50%);
+        background-color:co.$white;
+    }
+
+    &-list{
+        position: absolute;
+        top: 20px;
+        box-shadow: 0 1px 5px 0 rgb(0 0 0 / 11%);
+        @extend %flexPlaceholder;
+        left: 50%;
+        transform: translate(-50%);
+        border-radius: 5px;
+        
+        &-container{
+            width: 250px;
+            background-color: co.$white;
+        }
+
+        &-container-one{
+            width: 250px;
+            background-color: co.$white;
+            z-index: 1;
+            box-shadow: 0 1px 5px 1px rgb(0 0 0 / 11%);
+            display: none;
+        }
+
+        &-container-two{
+            z-index: 0;
+            width: 250px;
+            height: 200px;
+            background-color:co.$white;
+            display: none;
+        }
+    } 
+
+    &:hover{
+        display: block;
+    }
+}

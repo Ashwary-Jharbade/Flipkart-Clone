@@ -1,0 +1,16 @@
+@use "../base/colors" as co;
+
+.header{
+    &-wrapper{
+        background-color: co.$sky-blue;
+        position: static;
+        top: 0;
+    }
+
+    &-container{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        height: 55px;
+    }
+}

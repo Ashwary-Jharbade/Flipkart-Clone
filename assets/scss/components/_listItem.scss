@@ -1,0 +1,26 @@
+@use "../base/colors" as co;
+@use "../abstract/placeholder" as *;
+
+.list{
+    &-item{
+        @extend %flexPlaceholder;
+        padding: 10px 0 0 10px;
+       
+    }
+
+    &-icon{
+        padding:5px 5px 15px 5px;
+        color: co.$sky-blue;
+    }
+
+    &-content{
+        padding:5px 5px 15px 5px;
+        color: co.$black;
+    }
+
+    &-divider{
+        margin: 0;
+        padding: 0;
+        border-top: 1px solid co.$gray;
+    }
+}
