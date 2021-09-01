@@ -3,7 +3,7 @@
 
 @mixin inputField($height:15px,$width:200px,$padding:0,$margin:0) {
     @extend %inputPlaceholder;
-    padding: #{$padding};
+    padding: #{$padding}; 
     width: #{$width};
     height: #{$height};
     margin: #{$margin};

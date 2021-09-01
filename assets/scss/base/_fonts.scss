@@ -10,7 +10,7 @@ $size :10, 12, 14, 15, 16, 22;
             &-#{$var2}-#{$var}{
                 font-family: 'Roboto', sans-serif;
                 font-weight: $var2;
-                font-size: #{$var}px;
+                font-size: #{$var}px; 
             }
         }
     }

@@ -22,7 +22,7 @@
         box-shadow: 0 1px 5px 0 rgb(0 0 0 / 11%);
         @extend %flexPlaceholder;
         left: 50%;
-        transform: translate(-50%);
+        transform: translate(-50%); 
         border-radius: 5px;
         
         &-container{
