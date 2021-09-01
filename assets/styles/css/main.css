@@ -70,6 +70,26 @@ table {
   font-weight: 500;
   font-size: 10px;
 }
+.font-100-11 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 11px;
+}
+.font-300-11 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 11px;
+}
+.font-400-11 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+}
+.font-500-11 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 11px;
+}
 .font-100-12 {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
@@ -172,7 +192,7 @@ table {
 }
 
 /* font styling end */
-.search-bar-field {
+.login-btn, .nav-btn, .navbar-btn-container, .input-field, .input-container, .input-field-container {
   outline: none;
   border: none;
 }
@@ -182,52 +202,57 @@ table {
   flex-direction: row;
 }
 
-.header-item a {
+.list-item {
   text-decoration: none;
   outline: none;
 }
 
-/*Header search field styling start */
-.search-bar {
-  background-color: #ffffff;
+.input-container {
   display: flex;
-  margin: 0 15px;
-  border-radius: 1px;
-  width: 550px;
-}
-.search-bar-field-container {
-  width: 100%;
-}
-.search-bar-field {
-  padding: 8px 15px;
-  width: 94%;
-  height: 20px;
-  margin: 0;
-}
-.search-bar-field-icon {
-  align-self: center;
-  width: 6%;
-}
-.search-bar-field-icon a {
-  color: #2874f0;
+  background-color: #ffffff;
+  padding: 5px;
+  padding: 5px;
+  margin: 0 0 0 1vw;
+  width: 40vw;
+  height: auto;
 }
 
-/*Header search field styling end */
-.header-wrapper {
+.input-field-container {
+  padding: 0;
+  margin: 0;
+  width: 95%;
+  height: auto;
+}
+
+/*Input field styling start */
+.input-field {
+  padding: 5px;
+  margin: 0;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.seach-icon-container {
+  padding: 5px;
+}
+.seach-icon-container a {
+  color: #2874f0;
+  font-size: 16px;
+}
+
+/*Input field styling end */
+.header-container {
+  height: 55px;
   background-color: #2874f0;
   position: static;
-  top: 0;
-}
-.header-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  height: 55px;
+  width: 100%;
 }
 
 .list-item {
   padding: 10px 0 0 10px;
-} 
+}
 .list-icon {
   padding: 5px 5px 15px 5px;
   color: #2874f0;
@@ -242,10 +267,14 @@ table {
   border-top: 1px solid #eeeeee;
 }
 
+.sign-up-text {
+  margin-left: auto;
+}
+
 .drop-down {
-  position: relative;
   display: none;
-  top: -20px;
+  position: relative;
+  top: 0px;
 }
 .drop-down-arrow {
   position: absolute;
@@ -286,69 +315,73 @@ table {
   display: block;
 }
 
-/* Header styling start */
-.header-spacer {
-  min-width: 10px;
-  width: 170px;
-  max-width: 175px;
+.navbar-btn-container {
+  padding: 18px 0;
+  margin: 0 0 0 3vw;
+  width: auto;
+  height: auto;
+  background-color: transparent;
+  cursor: pointer;
 }
-.header-content {
+.navbar-btn-container:hover > .drop-down {
+  display: block;
+}
+.navbar-btn-container:hover > .nav-btn .fa-angle-down {
+  transform: rotate(180deg);
+}
+
+.login-btn {
+  border: none;
+  background-color: #ffffff;
+  color: #2874f0;
+  padding: 5px 40px;
+  margin: 0;
+  width: auto;
+  height: auto;
+}
+
+.nav-btn {
+  border: none;
+  background-color: transparent;
+  color: #ffffff;
+  padding: 5px;
+  margin: 0;
+  width: auto;
+  height: auto;
+}
+
+/* Navbar styling start */
+.navbar {
   display: flex;
-  align-self: center;
+  flex-direction: row;
   height: 55px;
   align-items: center;
 }
-.header-logo {
+.navbar-spacer {
+  width: 13vw;
+}
+.navbar .logo {
   cursor: pointer;
 }
-.header-logo img {
+.navbar .logo .logo-image-container img {
   height: 20px;
-  width: 85px;
 }
-.header-logo-text {
-  font-style: italic;
-  color: #ffffff;
-  font-weight: bold;
+.navbar .logo .logo-text {
   position: relative;
   margin-top: -5px;
-}
-.header-logo-text-plus {
-  color: #ffbc00;
-}
-.header-logo-text img {
-  height: 11px;
-  width: 11px;
-}
-.header-item {
-  padding: 10px;
-  margin-left: 40px;
-}
-.header-item a {
+  font-style: italic;
   color: #ffffff;
 }
-.header-item-link {
-  padding: 20px;
-  cursor: pointer;
+.navbar .logo .logo-text .plus {
+  color: #ffbc00;
 }
-.header-btn {
-  background-color: #ffffff;
-  padding: 5px 40px;
-  color: #2874f0 !important;
+.navbar .logo .logo-text img {
+  height: 12px;
 }
-
-.new-customer-text {
-  color: #212121;
+.navbar .logo .logo-text:hover {
+  text-decoration: underline;
 }
 
-.sign-up-text {
-  color: #2874f0;
-  margin-left: auto;
-}
-
-.header-item-link:hover ~ .drop-down {
-  display: block;
-}
-
-/* Header styling end */
+/* Navbar styling end */
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,48 @@
+@use "../base/colors" as *;
+@use "../components/inputField";
+@use "../layout/header";
+@use "../abstract/mixins" as *;
+@use "../components/dropDown";
+@use "../components/button";
+
+/* Navbar styling start */
+.navbar{
+    display: flex;
+    flex-direction: row;
+    height: 55px;
+    align-items: center;
+
+    &-spacer{
+        width: 13vw;
+    }
+
+    .logo{
+        cursor: pointer;
+        .logo-image-container{
+            img{
+                height: 20px;
+            }
+        }
+    
+        .logo-text{
+            position: relative;
+            margin-top: -5px;
+            font-style: italic;
+            color: $white;
+
+            .plus{
+                color: $yellow;
+            }
+
+            img{
+                height: 12px;
+            }
+
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+/* Navbar styling end */
+

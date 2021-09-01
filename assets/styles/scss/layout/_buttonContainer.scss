@@ -1,0 +1,18 @@
+@use "../abstract/mixins" as *;
+@use "../base/colors" as *;
+
+.navbar-btn-container{   
+    @include boxDimension("18px 0","0 0 0 3vw");
+    background-color: $transparent;
+    cursor: pointer;
+
+    &:hover {
+        > .drop-down{
+            display: block;
+        }
+
+        > .nav-btn .fa-angle-down{
+            transform: rotate(180deg);
+        }
+    }
+}

@@ -1,0 +1,13 @@
+@use "../base/colors" as *;
+@use "../abstract/mixins" as *;
+
+.input-container{
+    display: flex;
+    background-color: $white;
+    padding: 5px;
+    @include boxDimension("5px","0 0 0 1vw","40vw");
+}
+
+.input-field-container{
+    @include boxDimension("0","0","95%");
+}

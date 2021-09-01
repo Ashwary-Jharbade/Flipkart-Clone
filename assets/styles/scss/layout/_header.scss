@@ -1,0 +1,8 @@
+@use "../base/colors" as co;
+
+.header-container{
+    height: 55px;
+    background-color: co.$sky-blue;
+    position: static;
+    width: 100%;
+}

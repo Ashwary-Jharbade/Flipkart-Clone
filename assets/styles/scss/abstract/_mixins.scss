@@ -1,0 +1,12 @@
+@use "./placeholder" as *;
+@use "../base/colors" as co;
+
+@mixin  boxDimension($padding:0,$margin:0,$width:auto,$height:auto) {
+    @extend %inputPlaceholder;
+    padding: #{$padding};
+    margin: #{$margin};
+    width: #{$width};
+    height: #{$height};
+}
+
+

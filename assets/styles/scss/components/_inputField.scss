@@ -1,0 +1,20 @@
+@use "../base/colors" as *;
+@use "../abstract/mixins" as *;
+@use "../layout/inputContainer";
+
+/*Input field styling start */
+.input-field{
+    @include boxDimension("5px","0","100%");
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.seach-icon-container{
+    padding: 5px;
+    a{
+        color: $sky-blue;
+        font-size: 16px;
+    }
+}
+/*Input field styling end */
+

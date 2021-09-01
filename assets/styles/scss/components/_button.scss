@@ -1,0 +1,17 @@
+@use "../base/colors" as *;
+@use "../abstract/mixins" as *; 
+@use "../layout/buttonContainer";
+
+.login-btn{
+    border: none;
+    background-color: $white;
+    color: $sky-blue;
+    @include boxDimension("5px 40px");
+}
+
+.nav-btn{
+    border: none;
+    background-color: $transparent;
+    color: $white;
+    @include boxDimension("5px");
+}
