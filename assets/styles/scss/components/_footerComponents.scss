@@ -1,0 +1,36 @@
+@use "../base/colors" as *;
+
+.footer-bottom-bar{
+    &-items{
+        display: flex;
+        align-self: center;
+    }
+
+    &-img-container{
+        padding:0 10px;
+        position: relative;
+        top: -2px;
+    }
+}
+
+.footer-list{
+    &-head{
+        color: $dark-gray;
+        padding: 10px 0;
+    }
+
+    &-item-container{
+
+    }
+
+    &-item{
+        padding: 5px 0;
+        a{
+            color: $white;
+            text-decoration: none;
+        }
+        :hover{
+            text-decoration: underline !important;
+        }
+    }
+}
