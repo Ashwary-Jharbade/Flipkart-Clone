@@ -6,12 +6,20 @@
         @extend %flexPlaceholder;
         @extend %anchorPlaceholder;
         padding: 10px 0 0 10px;
-       
+    
+        &:hover{
+            background-color: co.$list-hover-color;
+        }
     }
 
     &-icon{
         padding:5px 5px 15px 5px;
         color: co.$sky-blue;
+    }
+
+    &-multi{
+        padding:5px 5px 15px 5px;
+        margin-left: auto;
     }
 
     &-content{

@@ -6,6 +6,10 @@
     background-color: $transparent;
     cursor: pointer;
 
+    .drop-down{
+        top: 0;
+    }
+
     &:hover {
         > .drop-down{
             display: block;

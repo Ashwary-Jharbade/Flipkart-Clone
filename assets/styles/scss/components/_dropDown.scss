@@ -2,10 +2,11 @@
 @use "../abstract/placeholder" as *;
 @use "../components/listItem";
 
+
 .drop-down{
     display: none;
     position: relative;
-    top: 0px;
+    z-index: 20;
     &-arrow{
         position: absolute;
         top: 20px;
@@ -14,6 +15,7 @@
         height: 20px;
         transform: rotate(45deg) translateX(-50%);
         background-color:co.$white;
+        box-shadow: 0 1px 5px 1px rgb(0 0 0 / 11%);
     }
 
     &-list{
@@ -35,15 +37,12 @@
             background-color: co.$white;
             z-index: 1;
             box-shadow: 0 1px 5px 1px rgb(0 0 0 / 11%);
-            display: none;
         }
 
         &-container-two{
             z-index: 0;
             width: 250px;
-            height: 200px;
             background-color:co.$white;
-            display: none;
         }
     } 
 

@@ -1,0 +1,25 @@
+@use "../base/colors" as *;
+
+.deal-card-wrapper{
+    margin: 0 5px;
+    display: flex;
+}
+
+.deal-card-container{
+    width: 80vw;
+}
+
+.deal-section-img-container{
+    width: 20vw;
+    background-color: $white;
+    img{
+        width: 98%;
+        height: 98%;
+        margin: 1%;
+    }
+}
+
+.deal-time-out{
+    color: $dark-gray;
+    margin: 5px 0;
+}

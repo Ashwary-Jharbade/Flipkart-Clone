@@ -3,6 +3,9 @@
 .header-container{
     height: 55px;
     background-color: co.$sky-blue;
-    position: static;
+    position:fixed;
+    top: 0;
     width: 100%;
+    box-shadow: 0.5px 0 5px 0.5px co.$black;
+    z-index: 200;
 }
