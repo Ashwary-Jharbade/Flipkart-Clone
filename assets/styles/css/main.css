@@ -170,6 +170,46 @@ table {
   font-weight: 500;
   font-size: 16px;
 }
+.font-100-18 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 18px;
+}
+.font-300-18 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+}
+.font-400-18 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+.font-500-18 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+.font-100-20 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+}
+.font-300-20 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+}
+.font-400-20 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+.font-500-20 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
 .font-100-22 {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
@@ -189,6 +229,66 @@ table {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 22px;
+}
+.font-100-24 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 24px;
+}
+.font-300-24 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+}
+.font-400-24 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+}
+.font-500-24 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+}
+.font-100-26 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 26px;
+}
+.font-300-26 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 26px;
+}
+.font-400-26 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+}
+.font-500-26 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 26px;
+}
+.font-100-50 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 50px;
+}
+.font-300-50 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 50px;
+}
+.font-400-50 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 50px;
+}
+.font-500-50 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 50px;
 }
 
 /* font styling end */
@@ -577,6 +677,7 @@ body {
   position: relative;
 }
 .card-slider-main-content-container {
+  padding: 0;
   overflow: hidden;
   overflow-x: scroll;
 }
@@ -637,6 +738,7 @@ body {
 
 .card-slider-main-content-container::-webkit-scrollbar {
   width: 0;
+  height: 0;
 }
 
 .btn-next {
@@ -671,10 +773,6 @@ body {
   width: 100%;
 }
 
-.footer-container {
-  height: 350px;
-}
-
 .footer-main-container {
   padding: 30px 50px;
   display: flex;
@@ -682,17 +780,18 @@ body {
 }
 
 .footer-list-block {
-  flex: 6;
+  flex: 5;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-start;
 }
 
 .footer-address-block {
-  flex: 4;
+  flex: 5;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  border-left: 1px solid #eeeeee;
 }
 
 .footer-bottom-bar-container {
@@ -715,24 +814,215 @@ body {
   align-self: center;
 }
 .footer-bottom-bar-img-container {
-  padding: 0 10px;
+  padding: 0 10px 0 0;
   position: relative;
   top: -2px;
 }
 
+.footer-list-wrapper {
+  width: 180px;
+}
 .footer-list-head {
   color: #9b9797;
   padding: 10px 0;
 }
 .footer-list-item {
   padding: 5px 0;
+  color: #ffffff;
+}
+.footer-list-item .address-text {
+  line-height: 1.5;
 }
 .footer-list-item a {
   color: #ffffff;
   text-decoration: none;
 }
-.footer-list-item :hover {
+.footer-list-item a:hover {
   text-decoration: underline !important;
+}
+
+.login-modal-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #00000080;
+  z-index: 300;
+  display: none;
+}
+.login-modal-container {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 650px;
+  height: 500px;
+  z-index: 400;
+}
+.login-modal-box {
+  display: flex;
+  flex-direction: row;
+  background-color: #ffffff;
+}
+.login-modal-create-account {
+  padding: 20px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+}
+.login-modal-create-account a {
+  color: #2874f0;
+  text-decoration: none;
+}
+
+.login-modal-img-block {
+  position: relative;
+  background-color: #2874f0;
+  width: 250px;
+}
+.login-modal-left-block {
+  padding: 40px 30px;
+}
+.login-modal-img {
+  position: absolute;
+  bottom: 30px;
+  padding: 20px;
+}
+.login-modal-img img {
+  width: 100%;
+}
+.login-modal-head {
+  color: #ffffff;
+}
+.login-modal-text {
+  margin-top: 20px;
+  line-height: 1.5;
+  color: #dbdbdb;
+}
+.login-modal-form-elements {
+  padding: 40px;
+  width: 300px;
+}
+.login-modal-cancel-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #ffffff;
+  padding: 0 10px;
+  position: relative;
+  top: -20px;
+}
+.login-modal-email {
+  margin-top: 20px;
+}
+.login-modal-password {
+  margin-top: 40px;
+}
+.login-modal-input-text-field {
+  width: 100%;
+  position: relative;
+}
+.login-modal-input-text-field input {
+  width: 100%;
+  padding: 5px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid #cccccc;
+  outline: none;
+  transition: all 500ms;
+}
+.login-modal-input-text-field input:focus {
+  border-bottom: 1px solid #2874f0;
+}
+.login-modal-input-password-field {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  border-bottom: 1px solid #cccccc;
+}
+.login-modal-input-password-field input {
+  padding: 5px 0;
+  width: 100%;
+  outline: none;
+  border: none;
+}
+.login-modal-input-password-field-text-label {
+  position: absolute;
+  top: 8px;
+  color: #878787;
+  cursor: text;
+  transition: all 300ms;
+}
+.login-modal-input-password-field-text-box {
+  flex: 8;
+}
+.login-modal-input-password-field-forget-box {
+  flex: 2;
+  position: relative;
+  top: 5px;
+}
+.login-modal-input-password-field-forget-box a {
+  color: #2874f0;
+  text-decoration: none;
+}
+.login-modal-input-text-label {
+  position: absolute;
+  top: 8px;
+  color: #878787;
+  cursor: text;
+  transition: all 300ms;
+}
+.login-modal-btn {
+  padding: 10px 0;
+}
+.login-modal-btn button {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  cursor: pointer;
+}
+.login-modal-btn-orange button {
+  background-color: #fb641b;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+}
+.login-modal-btn-white button {
+  background-color: #ffffff;
+  color: #2874f0;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+.login-modal-btn-seperator {
+  text-align: center;
+  color: #878787;
+  padding: 10px 0 5px 0;
+}
+.login-modal-policy {
+  margin-top: 30px;
+  padding: 5px 0;
+  color: #878787;
+}
+.login-modal-policy a {
+  color: #2874f0;
+  text-decoration: none;
+}
+.login-modal-new-user {
+  display: none;
+}
+
+.login-modal-input-text-field input:valid ~ .login-modal-input-text-label,
+.login-modal-input-text-field input:focus ~ .login-modal-input-text-label {
+  top: -10px;
+  font-size: 12px;
+}
+
+.login-modal-input-password-field-text-box input:valid ~ .login-modal-input-password-field-text-label,
+.login-modal-input-password-field-text-box input:focus ~ .login-modal-input-password-field-text-label {
+  top: -10px;
+  font-size: 12px;
 }
 
 /*# sourceMappingURL=main.css.map */

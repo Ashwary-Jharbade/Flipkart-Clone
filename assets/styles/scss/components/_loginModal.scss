@@ -1,0 +1,176 @@
+@use "../base/colors" as *;
+
+.login-modal{
+    &-img-block{
+        position: relative;
+        background-color: $sky-blue;
+        width: 250px;
+    }
+
+    &-left-block{
+        padding: 40px 30px;
+    }
+
+    &-img{
+        position: absolute;
+        bottom: 30px;
+        padding: 20px;
+        img{
+            width: 100%;
+        }
+    }
+
+    &-head{
+        color: $white;
+    }
+
+    &-text{
+        margin-top: 20px;
+        line-height: 1.5;
+        color: $dense-cream;
+    }
+
+    &-form-elements{
+        padding: 40px;
+        width: 300px;
+    }
+
+    &-cancel-btn{
+        background-color: $transparent;
+        border: none;
+        cursor: pointer;
+        color:$white;
+        padding: 0 10px;
+        position: relative;
+        top: -20px;
+    }
+
+    &-email{
+        margin-top: 20px;
+    }
+
+    &-password{
+        margin-top: 40px;
+    }
+
+    &-input-text-field{
+        width: 100%;
+        position: relative;
+        input{
+            width: 100%;
+            padding: 5px 0;
+            box-sizing: border-box;
+            border: none;
+            border-bottom: 1px solid $light-gray;
+            outline: none;
+            transition: all 500ms;
+
+            &:focus{
+                border-bottom: 1px solid $sky-blue;
+            }
+        }
+    }
+
+    &-input-password-field{
+        margin-top: 20px;
+        width:100%;
+        display: flex;
+        position: relative;
+        border-bottom: 1px solid $light-gray;
+        input{
+            padding: 5px 0;
+            width: 100%;
+            outline: none;
+            border: none;
+        }
+
+        &-text-label{
+            position: absolute;
+            top: 8px;
+            color: $gray-label;
+            cursor: text;
+            transition: all 300ms;
+        }
+
+        &-text-box{
+            flex: 8;
+        }
+
+        &-forget-box{
+            flex: 2;
+            position: relative;
+            top: 5px;
+            a{
+                color: $sky-blue;
+                text-decoration: none;
+            }
+        }
+    }
+
+    &-input-text-label{
+        position: absolute;
+        top: 8px;
+        color: $gray-label;
+        cursor: text;
+        transition: all 300ms;
+    }
+
+    &-btn{
+        padding: 10px 0;
+        button{
+            width: 100%;
+            padding: 13px;
+            border: none;
+            cursor: pointer;
+        }
+
+    }
+
+    &-btn-orange{
+        button{
+            background-color: $orange;
+            box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
+            color: $white;
+        }
+    }
+
+    &-btn-white{
+        button{
+            background-color: $white;
+            color: $sky-blue;
+            box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
+        }
+    }
+
+    &-btn-seperator{
+        text-align: center;
+        color: $gray-label;
+        padding: 10px 0 5px 0;
+    }
+
+    &-policy{
+        margin-top: 30px;
+        padding: 5px 0;
+        color: $gray-label;
+        a{
+            color: $sky-blue;
+            text-decoration: none;
+        }
+    }
+
+    &-new-user{
+        display: none;
+    }
+}
+
+.login-modal-input-text-field input:valid ~ .login-modal-input-text-label,
+.login-modal-input-text-field input:focus ~ .login-modal-input-text-label{
+    top: -10px;
+    font-size: 12px;
+}
+
+.login-modal-input-password-field-text-box input:valid ~ .login-modal-input-password-field-text-label,
+.login-modal-input-password-field-text-box input:focus ~ .login-modal-input-password-field-text-label{
+    top: -10px;
+    font-size: 12px;
+}

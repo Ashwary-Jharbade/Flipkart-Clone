@@ -40,7 +40,7 @@
                     </div>
     
                     <div class="login-btn-wrapper">
-                        <button class="navbar-btn-container font-500-15">
+                        <button onclick="toggleLoginModal(1)" class="navbar-btn-container font-500-15">
                             <span class="login-btn">Login</span>
                             <div class="drop-down">
                                 <div class="drop-down-arrow"></div>
@@ -346,9 +346,9 @@
                         </div>
                     </div>
                     <div class="card-slider-main-content">
-                        <button class="card-slider-btn btn-prev"> <span class="fa fa-angle-left"></span> </button>
-                        <button class="card-slider-btn btn-next"> <span class="fa fa-angle-left"></span> </button>
-                        <div class="card-slider-main-content-container">
+                        <button onclick="prevCard(1)" class="card-slider-btn btn-prev"> <span class="fa fa-angle-left"></span> </button>
+                        <button onclick="nextCard(1)" class="card-slider-btn btn-next"> <span class="fa fa-angle-left"></span> </button>
+                        <div class="card-slider-main-content-container slider-1">
                             <div class="card-slider-card-container">
                                 <div class="card-slider-card">
                                     <div class="card-slider-card-img-wrapper">
@@ -523,15 +523,18 @@
                     <div class="card-slider-header-text font-500-22">
                         Today's Fashion Deals
                     </div>
+                    <div class="font-400-14 deal-time-out">
+                        On Electronics Devices
+                    </div>
                 </div>
                 <div class="card-slider-header-btn">
                     <button class="font-500-14 ">VIEW ALL</button>
                 </div>
             </div>
             <div class="card-slider-main-content">
-                <button class="card-slider-btn btn-prev"> <span class="fa fa-angle-left"></span> </button>
-                <button class="card-slider-btn btn-next"> <span class="fa fa-angle-left"></span> </button>
-                <div class="card-slider-main-content-container">
+                <button onclick="prevCard(2)" class="card-slider-btn btn-prev"> <span class="fa fa-angle-left"></span> </button>
+                <button onclick="nextCard(2)" class="card-slider-btn btn-next"> <span class="fa fa-angle-left"></span> </button>
+                <div class="card-slider-main-content-container slider-2">
                     <div class="card-slider-card-container">
                         <div class="card-slider-card">
                             <div class="card-slider-card-img-wrapper">
@@ -700,15 +703,18 @@
                     <div class="card-slider-header-text font-500-22">
                         Today's Fashion Deals
                     </div>
+                    <div class="font-400-14 deal-time-out">
+                        From &#8377;99
+                    </div>
                 </div>
                 <div class="card-slider-header-btn">
                     <button class="font-500-14 ">VIEW ALL</button>
                 </div>
             </div>
             <div class="card-slider-main-content">
-                <button class="card-slider-btn btn-prev"> <span class="fa fa-angle-left"></span> </button>
-                <button class="card-slider-btn btn-next"> <span class="fa fa-angle-left"></span> </button>
-                <div class="card-slider-main-content-container">
+                <button onclick="prevCard(3)" class="card-slider-btn btn-prev"> <span class="fa fa-angle-left"></span> </button>
+                <button onclick="nextCard(3)" class="card-slider-btn btn-next"> <span class="fa fa-angle-left"></span> </button>
+                <div class="card-slider-main-content-container slider-3">
                     <div class="card-slider-card-container">
                         <div class="card-slider-card">
                             <div class="card-slider-card-img-wrapper">
@@ -885,91 +891,105 @@
                         </div>
                         <div class="footer-list-wrapper">
                             <div class="footer-list-head font-300-14">
-                                ABOUT
+                                HELP
                             </div>
                             <div class="footer-list-item-container font-400-12">
                                 <div class="footer-list-item">
-                                    <a href="">Contact Us</a>
+                                    <a href="">Payments</a>
                                 </div>
                                 <div class="footer-list-item">
-                                    <a href="">About Us</a>
+                                    <a href="">Shipping</a>
                                 </div>
                                 <div class="footer-list-item">
-                                    <a href="">Careers</a>
+                                    <a href="">Cancellation and Return</a>
                                 </div>
                                 <div class="footer-list-item">
-                                    <a href="">Flipkart Stories</a>
+                                    <a href="">FAQ</a>
                                 </div>
                                 <div class="footer-list-item">
-                                    <a href="">Press</a>
-                                </div>
-                                <div class="footer-list-item">
-                                    <a href="">Flipkart Wholesale</a>
-                                </div>
-                                <div class="footer-list-item">
-                                    <a href="">Corporate Information</a>
+                                    <a href="">Report Infringment</a>
                                 </div>
                             </div>
                         </div>
                         <div class="footer-list-wrapper">
                             <div class="footer-list-head font-300-14">
-                                ABOUT
+                                POLICY
                             </div>
                             <div class="footer-list-item-container font-400-12">
                                 <div class="footer-list-item">
-                                    <a href="">Contact Us</a>
+                                    <a href="">Return Policy</a>
                                 </div>
                                 <div class="footer-list-item">
-                                    <a href="">About Us</a>
+                                    <a href="">Terms Of Use</a>
                                 </div>
                                 <div class="footer-list-item">
-                                    <a href="">Careers</a>
+                                    <a href="">Security</a>
                                 </div>
                                 <div class="footer-list-item">
-                                    <a href="">Flipkart Stories</a>
+                                    <a href="">Privacy</a>
                                 </div>
                                 <div class="footer-list-item">
-                                    <a href="">Press</a>
+                                    <a href="">Sitemap</a>
                                 </div>
                                 <div class="footer-list-item">
-                                    <a href="">Flipkart Wholesale</a>
-                                </div>
-                                <div class="footer-list-item">
-                                    <a href="">Corporate Information</a>
+                                    <a href="">ERP Compliance</a>
                                 </div>
                             </div>
                         </div>
                         <div class="footer-list-wrapper">
                             <div class="footer-list-head font-300-14">
-                                ABOUT
+                                SOCIAL
                             </div>
                             <div class="footer-list-item-container font-400-12">
                                 <div class="footer-list-item">
-                                    <a href="">Contact Us</a>
+                                    <a href="">Facebook</a>
                                 </div>
                                 <div class="footer-list-item">
-                                    <a href="">About Us</a>
+                                    <a href="">Twitter</a>
                                 </div>
                                 <div class="footer-list-item">
-                                    <a href="">Careers</a>
-                                </div>
-                                <div class="footer-list-item">
-                                    <a href="">Flipkart Stories</a>
-                                </div>
-                                <div class="footer-list-item">
-                                    <a href="">Press</a>
-                                </div>
-                                <div class="footer-list-item">
-                                    <a href="">Flipkart Wholesale</a>
-                                </div>
-                                <div class="footer-list-item">
-                                    <a href="">Corporate Information</a>
+                                    <a href="">YouTube</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="footer-address-block">
-
+                        <div class="footer-list-wrapper">
+                            <div class="footer-list-head font-300-14">
+                                Mail Us
+                            </div>
+                            <div class="footer-list-item-container font-400-12">
+                                <div class="footer-list-item">
+                                    <div class="address-text">
+                                        Flipkart Internet Private Limited,
+                                        Buildings Alyssa, Begonia &
+                                        Clove Embassy Tech Village,
+                                        Outer Ring Road, Devarabeesanahalli Village,
+                                        Bengaluru, 560103,
+                                        Karnataka, India
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-list-wrapper">
+                            <div class="footer-list-head font-300-14">
+                                Registered Office Address
+                            </div>
+                            <div class="footer-list-item-container font-400-12">
+                                <div class="footer-list-item">
+                                    <div class="address-text">
+                                        Flipkart Internet Private Limited,
+                                        Buildings Alyssa, Begonia &
+                                        Clove Embassy Tech Village,
+                                        Outer Ring Road, Devarabeesanahalli Village,
+                                        Bengaluru, 560103,
+                                        Karnataka, India
+                                        CIN : U51109KA2012PTC066107
+                                        Telephone: 1800 202 9898
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="footer-bottom-bar-container">
@@ -1028,7 +1048,83 @@
         </div>
     </section>
 
+
+    <section>
+        <div class="login-modal-wrapper" id="login_modal">
+            <div class="login-modal-container">
+                <div class="login-modal-box">
+                    <div class="login-modal-img-block">
+                        <div class="login-modal-left-block">
+                            <div class="font-500-26 login-modal-head">
+                                Login
+                            </div>
+                            <div class="font-400-20 login-modal-text">
+                                Get access to your Orders, Whishlist and Recommendations
+                            </div>
+                        </div>
+                        <div  class="login-modal-img">
+                            <img src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/login_img_c4a81e.png" alt="">
+                        </div>
+                    </div>
+                    <div class="login-modal-form-elements">
+                        <div class="login-modal-email">
+                            <div class="login-modal-input-text-field">
+                                <input class="font-400-15" type="text" id="login_modal_user" required="true">
+                                <br>
+                                <label class="login-modal-input-text-label font-400-15" for="login_modal_user">Enter Email/Mobile number</label>
+                            </div>
+                        </div>
+                        <div class="login-modal-password">
+                            <div class="login-modal-input-password-field">
+                                <div class="login-modal-input-password-field-text-box">
+                                    <input onblur="passFieldBorderColor(0)" onclick="passFieldBorderColor(1)" class="font-400-15" type="text" id="login_modal_password" required="true">
+                                    <br>
+                                    <label class="login-modal-input-password-field-text-label font-400-15" for="login_modal_password">Enter Password</label>
+                                </div>
+                                <div class="login-modal-input-password-field-forget-box font-500-15">
+                                    <a href="">Forget?</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="login-modal-policy font-400-12">
+                                By continuing, you agree to Flipkart's <a href="">Terms of Use</a> and <a href="">Privacy Policy</a>.
+                            </div>
+                            <div class="login-modal-existing-user">
+                                <div class="login-modal-btn login-modal-btn-orange">
+                                    <button class="font-500-16">Login</button>
+                                </div>
+                                <div class="login-modal-btn-seperator font-300-16">
+                                    OR
+                                </div>
+                                <div class="login-modal-btn login-modal-btn-white">
+                                    <button class="font-500-16">Request OTP</button>
+                                </div>
+                            </div>
+                            <div class="login-modal-new-user">
+                                <div class="login-modal-btn login-modal-btn-orange">
+                                    <button class="font-500-16">CONTINUE</button>
+                                </div>
+                                <div class="login-modal-btn login-modal-btn-white">
+                                    <button onclick="toogleLoginForm(0)" class="font-500-16">Existing User? Log in</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="login-modal-create-account">
+                            <a href="" onclick="toogleLoginForm(1)" class="font-500-14">New to Flipkart? Create an account</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <button onclick="toggleLoginModal(0)" class="login-modal-cancel-btn font-300-50">&times;</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <script src="./assets/js/carousel.js"></script>
     <script src="./assets/js/categoryDropdown.js"></script>
+    <script src="./assets/js/loginModal.js"></script>
+    <script src="./assets/js/cardSlider.js"></script>
 </body>
 </html>

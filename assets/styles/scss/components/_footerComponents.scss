@@ -7,29 +7,36 @@
     }
 
     &-img-container{
-        padding:0 10px;
+        padding:0 10px 0 0;
         position: relative;
         top: -2px;
     }
 }
 
 .footer-list{
+
+    &-wrapper{
+        width: 180px;
+    }
+
     &-head{
         color: $dark-gray;
         padding: 10px 0;
     }
 
-    &-item-container{
-
-    }
-
     &-item{
         padding: 5px 0;
+        color: $white;
+
+        .address-text{
+            line-height: 1.5;
+        }
+
         a{
             color: $white;
             text-decoration: none;
         }
-        :hover{
+        a:hover{
             text-decoration: underline !important;
         }
     }
