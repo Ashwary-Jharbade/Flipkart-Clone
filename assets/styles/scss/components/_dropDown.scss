@@ -7,6 +7,8 @@
     display: none;
     position: relative;
     z-index: 20;
+    transition: all 1s;
+
     &-arrow{
         position: absolute;
         top: 20px;
@@ -36,17 +38,23 @@
             width: 250px;
             background-color: co.$white;
             z-index: 1;
-            box-shadow: 0 1px 5px 1px rgb(0 0 0 / 11%);
+            box-shadow: 0 4px 16px 0 rgb(0 0 0 / 20%);
         }
 
         &-container-two{
             z-index: 0;
             width: 250px;
             background-color:co.$white;
+            box-shadow: 0 4px 16px 0 rgb(0 0 0 / 20%);
         }
     } 
 
     &:hover{
+        transition: all 500ms;
         display: block;
     }
+}
+
+#more_list_container{
+    left: -50%;
 }

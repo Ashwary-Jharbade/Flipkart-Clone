@@ -16,6 +16,7 @@
         }
 
         > .nav-btn .fa-angle-down{
+            transition: all 500ms;
             transform: rotate(180deg);
         }
     }

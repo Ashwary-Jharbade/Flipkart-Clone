@@ -218,13 +218,13 @@
                     </div>
                 </div>
 
-                <div class="category-item-wrapper">
+                <div class="category-item-wrapper" onmouseleave="toggleCatArrow('fashion',0)" onmouseover="toggleCatArrow('fashion',1)">
                     <div class="category-items">
                         <div class="category-image">
                             <img src="https://rukminim1.flixcart.com/flap/128/128/image/82b3ca5fb2301045.png?q=100" alt="">
                         </div>
                         <div class="category-name">
-                            <span>Fashion <span class="fa fa-angle-down" id="fashion_category_span"></span></span>
+                            <span id="fashion">Fashion <span class="fa fa-angle-down cat-arrow" id="fashion_category_span"></span></span>
                         </div>
                     </div>
                     
@@ -245,35 +245,83 @@
                     </div>
                 </div>
                 
-                <div class="category-item-wrapper">
+                <div class="category-item-wrapper" onmouseleave="toggleCatArrow('electronic',0)" onmouseover="toggleCatArrow('electronic',1)">
                     <div class="category-items">
                         <div class="category-image">
                             <img src="https://rukminim1.flixcart.com/flap/128/128/image/69c6589653afdb9a.png?q=100" alt="">
                         </div>
                         <div class="category-name">
-                            <span>Electronics <span class="fa fa-angle-down"></span></span>
+                            <span id="electronic">Electronics <span class="fa fa-angle-down" id="electronic_category_span"></span></span>
+                        </div>
+                    </div>
+
+                    <div class="drop-down" id="electronic_main">
+                        <div class="drop-down-arrow"></div>
+                        <div class="drop-down-list">
+                            <div class="drop-down-list-container-one">
+                                <div class="drop-down-list-container" id="electronic_list">
+                                    <!-- Dynamic Content -->
+                                </div>
+                            </div>
+                            <div class="drop-down-list-container-two">
+                                <div class="drop-down-list-container" id="electronic_sublist">
+                                     <!-- Dynamic Content -->                                    
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="category-item-wrapper">
+                <div class="category-item-wrapper" onmouseleave="toggleCatArrow('home',0)" onmouseover="toggleCatArrow('home',1)">
                     <div class="category-items">
                         <div class="category-image">
                             <img src="https://rukminim1.flixcart.com/flap/128/128/image/ab7e2b022a4587dd.jpg?q=100" alt="">
                         </div>
                         <div class="category-name">
-                            <span>Home <span class="fa fa-angle-down"></span></span>
+                            <span id="home">Home <span class="fa fa-angle-down" id="home_category_span"></span></span>
+                        </div>
+                    </div>
+
+                    <div class="drop-down" id="home_main">
+                        <div class="drop-down-arrow"></div>
+                        <div class="drop-down-list">
+                            <div class="drop-down-list-container-one">
+                                <div class="drop-down-list-container" id="home_list">
+                                    <!-- Dynamic Content -->
+                                </div>
+                            </div>
+                            <div class="drop-down-list-container-two">
+                                <div class="drop-down-list-container" id="home_sublist">
+                                     <!-- Dynamic Content -->                                    
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="category-item-wrapper">
+                <div class="category-item-wrapper"  onmouseleave="toggleCatArrow('appliances',0)" onmouseover="toggleCatArrow('appliances',1)">
                     <div class="category-items">
                         <div class="category-image">
                             <img src="https://rukminim1.flixcart.com/flap/128/128/image/0ff199d1bd27eb98.png?q=100" alt="">
                         </div>
                         <div class="category-name">
-                            <span>Appliances <span class="fa fa-angle-down"></span></span>
+                            <span id="appliances">Appliances <span class="fa fa-angle-down" id="appliances_category_span"></span></span>
+                        </div>
+                    </div>
+
+                    <div class="drop-down" id="appliances_main">
+                        <div class="drop-down-arrow"></div>
+                        <div class="drop-down-list">
+                            <div class="drop-down-list-container-one">
+                                <div class="drop-down-list-container" id="appliances_list">
+                                    <!-- Dynamic Content -->
+                                </div>
+                            </div>
+                            <div class="drop-down-list-container-two">
+                                <div class="drop-down-list-container" id="appliances_sublist">
+                                     <!-- Dynamic Content -->                                    
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -289,13 +337,29 @@
                     </div>
                 </div>
 
-                <div class="category-item-wrapper">
+                <div class="category-item-wrapper" onmouseleave="toggleCatArrow('more',0)" onmouseover="toggleCatArrow('more',1)">
                     <div class="category-items">
                         <div class="category-image">
                             <img src="https://rukminim1.flixcart.com/flap/128/128/image/dff3f7adcf3a90c6.png?q=100" alt="">
                         </div>
                         <div class="category-name">
-                            <span>Beauty, Toys & More <span class="fa fa-angle-down"></span></span>
+                            <span id="more">Beauty, Toys & More <span class="fa fa-angle-down" id="more_category_span"></span></span>
+                        </div>
+                    </div>
+
+                    <div class="drop-down" id="more_main">
+                        <div class="drop-down-arrow"></div>
+                        <div class="drop-down-list" id="more_list_container">
+                            <div class="drop-down-list-container-one">
+                                <div class="drop-down-list-container" id="more_list">
+                                    <!-- Dynamic Content -->
+                                </div>
+                            </div>
+                            <div class="drop-down-list-container-two">
+                                <div class="drop-down-list-container" id="more_sublist">
+                                     <!-- Dynamic Content -->                                    
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>          
@@ -470,6 +534,63 @@
                                     <div class="card-slider-card-img-wrapper">
                                         <div class="card-slider-card-img-container">
                                             <img src="https://rukminim1.flixcart.com/image/150/150/k0vbgy80pkrrdj/power-bank-refurbished/z/v/r/power-bank-b-ib-10000lp-iball-original-imafkzf6gcnr5ftc.jpeg?q=70" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="card-slider-card-text-content">
+                                        <div class="prod-category font-500-14">
+                                            Van Heusen, Louis Philips
+                                        </div>
+                                        <div class="prod-discount font-400-14">
+                                            Min 50% Off
+                                        </div>
+                                        <div class="prod-type font-400-14">
+                                            Shorts, Trousers, Suits
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card-slider-card">
+                                    <div class="card-slider-card-img-wrapper">
+                                        <div class="card-slider-card-img-container">
+                                            <img src="https://rukminim1.flixcart.com/flap/150/150/image/6ee419917a415033.png?q=70" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="card-slider-card-text-content">
+                                        <div class="prod-category font-500-14">
+                                            Van Heusen, Louis Philips
+                                        </div>
+                                        <div class="prod-discount font-400-14">
+                                            Min 50% Off
+                                        </div>
+                                        <div class="prod-type font-400-14">
+                                            Shorts, Trousers, Suits
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card-slider-card">
+                                    <div class="card-slider-card-img-wrapper">
+                                        <div class="card-slider-card-img-container">
+                                            <img src="https://rukminim1.flixcart.com/image/150/150/kmkxbww0/collapsible-wardrobe/w/o/h/pvc-wbrownok-o-kure-wine-red-original-imagfgkzzumyztvy.jpeg?q=70" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="card-slider-card-text-content">
+                                        <div class="prod-category font-500-14">
+                                            Van Heusen, Louis Philips
+                                        </div>
+                                        <div class="prod-discount font-400-14">
+                                            Min 50% Off
+                                        </div>
+                                        <div class="prod-type font-400-14">
+                                            Shorts, Trousers, Suits
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="card-slider-card">
+                                    <div class="card-slider-card-img-wrapper">
+                                        <div class="card-slider-card-img-container">
+                                            <img src="https://rukminim1.flixcart.com/image/150/150/jy7kyvk0/backpack/k/v/n/ride-casual-01-turquoise-fg0-0-64-001-backpack-american-original-imafghyrfhere6qq.jpeg?q=70" alt="">
                                         </div>
                                     </div>
                                     <div class="card-slider-card-text-content">
@@ -670,6 +791,63 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="card-slider-card">
+                            <div class="card-slider-card-img-wrapper">
+                                <div class="card-slider-card-img-container">
+                                    <img src="https://rukminim1.flixcart.com/flap/150/150/image/6ee419917a415033.png?q=70" alt="">
+                                </div>
+                            </div>
+                            <div class="card-slider-card-text-content">
+                                <div class="prod-category font-500-14">
+                                    Van Heusen, Louis Philips
+                                </div>
+                                <div class="prod-discount font-400-14">
+                                    Min 50% Off
+                                </div>
+                                <div class="prod-type font-400-14">
+                                    Shorts, Trousers, Suits
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-slider-card">
+                            <div class="card-slider-card-img-wrapper">
+                                <div class="card-slider-card-img-container">
+                                    <img src="https://rukminim1.flixcart.com/image/150/150/kmkxbww0/collapsible-wardrobe/w/o/h/pvc-wbrownok-o-kure-wine-red-original-imagfgkzzumyztvy.jpeg?q=70" alt="">
+                                </div>
+                            </div>
+                            <div class="card-slider-card-text-content">
+                                <div class="prod-category font-500-14">
+                                    Van Heusen, Louis Philips
+                                </div>
+                                <div class="prod-discount font-400-14">
+                                    Min 50% Off
+                                </div>
+                                <div class="prod-type font-400-14">
+                                    Shorts, Trousers, Suits
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-slider-card">
+                            <div class="card-slider-card-img-wrapper">
+                                <div class="card-slider-card-img-container">
+                                    <img src="https://rukminim1.flixcart.com/image/150/150/jy7kyvk0/backpack/k/v/n/ride-casual-01-turquoise-fg0-0-64-001-backpack-american-original-imafghyrfhere6qq.jpeg?q=70" alt="">
+                                </div>
+                            </div>
+                            <div class="card-slider-card-text-content">
+                                <div class="prod-category font-500-14">
+                                    Van Heusen, Louis Philips
+                                </div>
+                                <div class="prod-discount font-400-14">
+                                    Min 50% Off
+                                </div>
+                                <div class="prod-type font-400-14">
+                                    Shorts, Trousers, Suits
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -836,6 +1014,63 @@
                             <div class="card-slider-card-img-wrapper">
                                 <div class="card-slider-card-img-container">
                                     <img src="https://rukminim1.flixcart.com/image/150/150/k0vbgy80pkrrdj/power-bank-refurbished/z/v/r/power-bank-b-ib-10000lp-iball-original-imafkzf6gcnr5ftc.jpeg?q=70" alt="">
+                                </div>
+                            </div>
+                            <div class="card-slider-card-text-content">
+                                <div class="prod-category font-500-14">
+                                    Van Heusen, Louis Philips
+                                </div>
+                                <div class="prod-discount font-400-14">
+                                    Min 50% Off
+                                </div>
+                                <div class="prod-type font-400-14">
+                                    Shorts, Trousers, Suits
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-slider-card">
+                            <div class="card-slider-card-img-wrapper">
+                                <div class="card-slider-card-img-container">
+                                    <img src="https://rukminim1.flixcart.com/flap/150/150/image/6ee419917a415033.png?q=70" alt="">
+                                </div>
+                            </div>
+                            <div class="card-slider-card-text-content">
+                                <div class="prod-category font-500-14">
+                                    Van Heusen, Louis Philips
+                                </div>
+                                <div class="prod-discount font-400-14">
+                                    Min 50% Off
+                                </div>
+                                <div class="prod-type font-400-14">
+                                    Shorts, Trousers, Suits
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-slider-card">
+                            <div class="card-slider-card-img-wrapper">
+                                <div class="card-slider-card-img-container">
+                                    <img src="https://rukminim1.flixcart.com/image/150/150/kmkxbww0/collapsible-wardrobe/w/o/h/pvc-wbrownok-o-kure-wine-red-original-imagfgkzzumyztvy.jpeg?q=70" alt="">
+                                </div>
+                            </div>
+                            <div class="card-slider-card-text-content">
+                                <div class="prod-category font-500-14">
+                                    Van Heusen, Louis Philips
+                                </div>
+                                <div class="prod-discount font-400-14">
+                                    Min 50% Off
+                                </div>
+                                <div class="prod-type font-400-14">
+                                    Shorts, Trousers, Suits
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-slider-card">
+                            <div class="card-slider-card-img-wrapper">
+                                <div class="card-slider-card-img-container">
+                                    <img src="https://rukminim1.flixcart.com/image/150/150/jy7kyvk0/backpack/k/v/n/ride-casual-01-turquoise-fg0-0-64-001-backpack-american-original-imafghyrfhere6qq.jpeg?q=70" alt="">
                                 </div>
                             </div>
                             <div class="card-slider-card-text-content">

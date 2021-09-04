@@ -25,10 +25,12 @@
         color: $sky-blue;
 
         ~ .drop-down{
+            transition: all 500ms;
             display: block;
         }
 
         > .category-name .fa-angle-down{
+            transition: all 500ms;
             transform: rotate(180deg);
         }
     }
@@ -42,7 +44,7 @@
 
     &-content{
         display: flex;
-        padding: 15px 15px;
+        padding: 13px 13px;
         background-color:$white;
 
         &-icon{
@@ -55,6 +57,7 @@
             color: $sky-blue;
 
             > .category-list-item-content-icon{
+                transition: all 500ms;
                 display: block;
             }
         }
@@ -63,4 +66,8 @@
 
 .category-sublist-container{
     display: none;
+    &-heading{
+        padding: 15px 15px 5px 15px;
+        color: $gray-label;
+    }
 }

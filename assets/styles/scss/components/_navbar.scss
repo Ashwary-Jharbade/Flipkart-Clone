@@ -38,6 +38,7 @@
             }
 
             &:hover{
+                transition: all 500ms;
                 text-decoration: underline;
             }
         }
