@@ -4,6 +4,10 @@
     top: -22px;
 }
 
+.category-item-wrapper:last-child .drop-down .drop-down-list{
+    left: -50%;
+}
+
 .category-items{
     margin:0 30px;
     cursor: pointer;

@@ -430,10 +430,6 @@ body {
   display: block;
 }
 
-#more_list_container {
-  left: -50%;
-}
-
 .navbar-btn-container {
   padding: 18px 0;
   margin: 0 0 0 3vw;
@@ -518,6 +514,10 @@ body {
 
 .category-item-wrapper .drop-down {
   top: -22px;
+}
+
+.category-item-wrapper:last-child .drop-down .drop-down-list {
+  left: -50%;
 }
 
 .category-items {
